@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0 30px;
   display: flex;
+  font-size: 15px;
+  text-transform: uppercase;
+  align-items: center;
 }
 .menu-item {
   cursor: pointer;

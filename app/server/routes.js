@@ -42,7 +42,13 @@ const ISOMORPHIC_ROUTES = [
     pageType: PAGE_TYPE.TAG_PAGE,
     exact: true
   },
-  { path: "/search", pageType: PAGE_TYPE.SEARCH_PAGE, exact: true }
+  { path: "/search", pageType: PAGE_TYPE.SEARCH_PAGE, exact: true },
+
+  {
+    path: "/newComponent",
+    pageType: PAGE_TYPE.NEW_COMP,
+    exact: true
+  }
 ];
 
 export function generateRoutes(config, domainSlug = undefined) {

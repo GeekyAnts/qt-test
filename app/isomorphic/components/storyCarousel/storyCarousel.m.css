@@ -1,0 +1,58 @@
+.container {
+  height: 100;
+  width: 100;
+  background: red;
+  padding: 40px;
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.horizontal-card {
+  height: 200;
+  width: 200;
+  background-color: steelblue;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.raghav {
+  height: 500;
+  width: 500;
+  background: pink;
+}
+.card-image {
+  flex-basis: 50%;
+}
+
+.card-content {
+  padding-top: 12px;
+  padding-left: 12px;
+  color: #000;
+}
+
+.section-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+  color: white;
+}
+
+.author-name {
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+}

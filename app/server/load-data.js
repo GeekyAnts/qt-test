@@ -45,6 +45,8 @@ export function loadData(pageType, params, config, client, { host, next, domainS
         return Promise.resolve({ cacheKeys: ["static"] });
       case PAGE_TYPE.SEARCH_PAGE:
         return loadSearchPageData(client, params.q, config);
+      case PAGE_TYPE.NEW_COMP:
+        return Promise.resolve({ text: "RV" });
       default:
         return Promise.resolve({ error: { message: "No Loader" } });
     }

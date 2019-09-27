@@ -1,0 +1,43 @@
+.heading {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.horizontal-card {
+  display: flex;
+  background-color: steelblue;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.card-image {
+  flex-basis: 50%;
+}
+
+.card-content {
+  padding-left: 12px;
+  color: #000;
+}
+
+.section-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.author-name {
+  color: blue;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
+}
