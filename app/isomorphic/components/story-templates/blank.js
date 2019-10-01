@@ -1,7 +1,5 @@
-/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import React from "react";
-
 import { ResponsiveImage, StoryElement } from "@quintype/components";
 
 function StoryCard(props) {
@@ -9,6 +7,7 @@ function StoryCard(props) {
     <div style={{ marginTop: 50 }}>
       {props.card["story-elements"].map(element => (
         <div
+          key={element.id}
           style={{
             fontSize: 21,
             fontFamily: "medium-content-serif-font",

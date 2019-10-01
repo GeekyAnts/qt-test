@@ -1,0 +1,108 @@
+.heading {
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.84);
+  font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  align-items: center;
+}
+.more {
+  font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}
+.abcd {
+  display: flex;
+  width: 390px;
+  justify-content: space-between;
+  align-items: center;
+}
+.storyGrid {
+  font-size: 22px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.84);
+  font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+
+  padding-bottom: 25px;
+}
+.horizontal-card {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 12px;
+  margin-bottom: 12px;
+  width: 680px;
+  height: 181px;
+  font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.card-image {
+  width: 230px;
+}
+.parent {
+  display: flex;
+}
+.test {
+  background-color: indianred;
+  margin-left: 50px;
+  width: 200px;
+}
+
+.card-content {
+  padding-left: 12px;
+  color: #000;
+}
+
+.section-name {
+  font-size: 24px;
+  margin: 0;
+  font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.card-title {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.author-name {
+  font-size: 16px;
+  font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  font-size: 15px;
+  text-transform: uppercase;
+  align-items: center;
+}
+.menu-item {
+  cursor: pointer;
+  padding: 12px;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+  }
+}

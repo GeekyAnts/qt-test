@@ -5,7 +5,8 @@
   display: flex;
   font-size: 15px;
   text-transform: uppercase;
-  align-items: center;
+  margin-top: 60px;
+  margin-left: -450px;
 }
 .menu-item {
   cursor: pointer;

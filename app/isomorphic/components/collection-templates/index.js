@@ -2,6 +2,7 @@ import { wrapCollectionLayout, EagerLoadImages } from "@quintype/components";
 import { FourColGrid } from "./four-col-grid";
 import { TwoColGrid } from "../two-col-grid";
 import { StoryCarousel } from "../storyCarousel";
+import { ThreeColGrid } from "../three-col-grid";
 import React from "react";
 
 function wrapEager(f) {
@@ -20,5 +21,6 @@ export default {
   FourColGrid: wrapEager(wrapCollectionLayout(FourColGrid)),
   TwoColGrid: wrapEager(wrapCollectionLayout(TwoColGrid)),
   StoryCarousel: wrapEager(wrapCollectionLayout(StoryCarousel)),
-  defaultTemplate: wrapEager(wrapCollectionLayout(StoryCarousel))
+  ThreeColGrid: wrapEager(wrapCollectionLayout(ThreeColGrid)),
+  defaultTemplate: wrapEager(wrapCollectionLayout(ThreeColGrid))
 };

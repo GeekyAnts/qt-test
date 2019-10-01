@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 import { array, object } from "prop-types";
 import { Link, ResponsiveImage } from "@quintype/components";
@@ -8,9 +5,9 @@ import { Link, ResponsiveImage } from "@quintype/components";
 import ItemsCarousel from "react-items-carousel";
 import "./storyCarousel.m.css";
 
+// eslint-disable-next-line react/prop-types
 function HorizontalStoryCarousel({ stories, collection }) {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
-  const chevronWidth = 40;
   return (
     <div style={{ padding: "0 60px", maxWidth: 800, margin: "0 auto" }}>
       <ItemsCarousel
@@ -31,6 +28,7 @@ function HorizontalStoryCarousel({ stories, collection }) {
       >
         {stories.slice(0, 6).map((story, index) => (
           <div
+            key={`${index}-${story.id}`}
             style={{
               padding: "15px 25px",
               maxWidth: 800,

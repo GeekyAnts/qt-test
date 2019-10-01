@@ -4,7 +4,7 @@ import assetify from "@quintype/framework/assetify";
 
 import "./styles.m.css";
 
-import logo from "./publisher-logo.png";
+import logo from "./ga.png";
 
 function AppLogo() {
   return (

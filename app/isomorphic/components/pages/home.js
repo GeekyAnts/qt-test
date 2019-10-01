@@ -9,7 +9,6 @@ import { LazyCollection, WithPreview, replaceAllStoriesInCollection, LazyLoadIma
 
 export const HomePage = props => (
   <div>
-    <h1>Home GeekyAnts</h1>
     <LazyLoadImages>
       <LazyCollection collection={props.data.collection} collectionTemplates={getCollectionTemplate} lazyAfter={2} />
     </LazyLoadImages>

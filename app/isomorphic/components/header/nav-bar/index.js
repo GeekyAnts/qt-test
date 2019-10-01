@@ -11,13 +11,16 @@ function NavBar(props) {
       <ul styleName="navbar">
         {get(props, ["menu", "default"], []).map((item, index) => {
           return (
+            // eslint-disable-next-line react/prop-types
             <li key={`${item["id"]}${index}`} onClick={props.closeMenu} styleName="menu-item">
               <MenuItem item={item} />
             </li>
           );
         })}
       </ul>
-      <NavbarSearch {...props} />
+      <div>
+        <NavbarSearch {...props} />
+      </div>
     </React.Fragment>
   );
 }

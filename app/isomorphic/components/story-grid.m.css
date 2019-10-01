@@ -1,3 +1,52 @@
 .story-grid-item-image {
+  width: 50%;
+}
+
+.story-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  background-color: red;
   width: 100%;
+}
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
+.number {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.15);
+  font-family: "medium-content-sans-serif-font", sans-serif;
+  font-weight: 400;
+}
+.child {
+  margin-top: -5px;
+  margin-left: 16px;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 18px;
+  font-family: "medium-content-sans-serif-font", sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+}
+.author-name {
+  font-size: 16px;
+  font-family: "medium-content-sans-serif-font", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.84);
 }
