@@ -53,7 +53,9 @@ export function ThreeColGrid({ collection, stories }) {
     <div styleName="parent">
       <div style={{ marginRight: 30 }}>
         <div styleName="header">
-          <h3 styleName="heading">{collection.name}</h3>
+          <div styleName="headerChild">
+            <h3 styleName="heading">{collection.name}</h3>
+          </div>
           <h3 styleName="more">
             MORE <FaChevronRight style={{ height: 12 }} />
           </h3>
@@ -65,11 +67,16 @@ export function ThreeColGrid({ collection, stories }) {
           ))}
         </div>
       </div>
-      {/* <div styleName="test">raghav</div> {collection.name} */}
-      <div>
-        <h3 styleName="storyGrid">Popular in GeekyAnts</h3>
-        <StoryGrid stories={stories} />
-      </div>
+      {collection.name === "Getting Started" ? (
+        <div>
+          <h3 styleName="storyGrid sticky">Popular in GeekyAnts</h3>
+          <div styleName="storySticky">
+            <StoryGrid stories={stories} />
+          </div>
+        </div>
+      ) : (
+        <div />
+      )}
     </div>
   );
 }

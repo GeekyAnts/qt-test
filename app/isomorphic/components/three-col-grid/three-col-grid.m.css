@@ -11,6 +11,20 @@
   margin-bottom: 25px;
   align-items: center;
 }
+.headerChild {
+  margin-bottom: -1.5px;
+  border-bottom: 0.1px solid black;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+}
+.storySticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7rem;
+}
 .more {
   font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
   font-weight: 400;
