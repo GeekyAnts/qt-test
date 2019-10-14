@@ -61,7 +61,7 @@ export function ThreeColGrid({ collection, stories }) {
       ) : (
         <div />
       )}
-      <div styleName="parent resp">
+      <div styleName="parent">
         <div style={{ marginRight: 30 }}>
           <div styleName="header">
             <div styleName="headerChild">
