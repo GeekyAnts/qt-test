@@ -80,7 +80,7 @@ export function ThreeColGrid({ collection, stories }) {
         </div>
         {collection.name === "Getting Started" ? (
           <div styleName="popular">
-            <h3 styleName="storyGrid sticky">Popular on Medium</h3>
+            <h3 styleName="storyGrid sticky">Popular in GeekyAnts</h3>
             <div styleName="storySticky">
               <StoryGrid stories={stories} />
             </div>

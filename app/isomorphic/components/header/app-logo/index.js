@@ -10,7 +10,7 @@ function AppLogo() {
   return (
     <div>
       <Link href="/">
-        <div styleName="medium">Medium</div>
+        <div styleName="logo">GeekyAnts</div>
         {/* <img styleName="publisher-logo" srcSet={` ${assetify(logo)}`} src={assetify(logo)} alt="Logo" /> */}
       </Link>
     </div>

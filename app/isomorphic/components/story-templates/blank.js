@@ -25,7 +25,7 @@ function StoryCard(props) {
 
 function BlankStoryTemplate(props) {
   return (
-    <div className="blank-story" style={{ width: "70%", marginLeft: 155 }}>
+    <div className="blank-story" style={{ width: "100%" }}>
       <hr style={{ width: "100%", marginBottom: 30 }} />
       <figure className="blank-story-image qt-image-16x9">
         <ResponsiveImage
