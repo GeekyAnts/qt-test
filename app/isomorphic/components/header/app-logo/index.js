@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "@quintype/components";
-import assetify from "@quintype/framework/assetify";
+// import assetify from "@quintype/framework/assetify";
 
 import "./styles.m.css";
 
-import logo from "./ga.png";
+// import logo from "./ga.png";
 
 function AppLogo() {
   return (
     <div>
       <Link href="/">
-        <img styleName="publisher-logo" srcSet={` ${assetify(logo)}`} src={assetify(logo)} alt="Logo" />
+        <div styleName="medium">Medium</div>
+        {/* <img styleName="publisher-logo" srcSet={` ${assetify(logo)}`} src={assetify(logo)} alt="Logo" /> */}
       </Link>
     </div>
   );

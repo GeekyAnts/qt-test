@@ -18,12 +18,12 @@
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 2rem;
+  top: 4rem;
 }
 .storySticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 7rem;
+  top: 8.5rem;
 }
 .more {
   font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
@@ -33,12 +33,14 @@
 }
 .abcd {
   display: flex;
-  width: 390px;
-  justify-content: space-between;
-  align-items: center;
+}
+.save {
+  display: flex;
+  align-self: center;
+  margin-left: 100px;
 }
 .storyGrid {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.84);
   font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
@@ -48,12 +50,11 @@
 }
 .horizontal-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   padding: 12px;
   margin-bottom: 12px;
-  width: 680px;
-  height: 181px;
+
   font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.84);
@@ -62,23 +63,21 @@
 }
 
 .card-image {
-  width: 230px;
+  display: flex;
 }
 .parent {
   display: flex;
 }
-.test {
-  background-color: indianred;
-  margin-left: 50px;
-  width: 200px;
-}
 
 .card-content {
+  display: flex;
+  flex-direction: column;
   padding-left: 12px;
   color: #000;
 }
 
 .section-name {
+  width: 300px;
   font-size: 24px;
   margin: 0;
   font-family: "medium-content-sans-serif-font sans-serif", sans-serif;
@@ -86,6 +85,7 @@
 }
 
 .card-title {
+  width: 150px;
   font-size: 16px;
   line-height: 1.4;
   font-weight: 400;
@@ -103,20 +103,50 @@
   list-style-type: none;
   margin: 0;
   padding: 0 30px;
-  display: flex;
   font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  font-family: "medium-content-sans-serif-font", sans-serif;
   text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.84);
+
+  margin-left: -29px;
+
+  background-color: white;
+  height: 50px;
   align-items: center;
+}
+.menubar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 .menu-item {
   cursor: pointer;
   padding: 12px;
 }
-
+.popular {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 992px) {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .popular {
+    display: none;
+  }
+
+  .section-name {
+    display: flex;
   }
 }

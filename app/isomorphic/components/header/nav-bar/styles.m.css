@@ -1,3 +1,10 @@
+.parent {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -5,8 +12,15 @@
   display: flex;
   font-size: 15px;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-left: -450px;
+  background-color: blue;
+}
+
+.next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .menu-item {
   cursor: pointer;

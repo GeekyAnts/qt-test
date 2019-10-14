@@ -21,6 +21,7 @@
 .parent {
   display: flex;
   justify-content: space-between;
+  width: 250px;
 }
 .number {
   display: flex;
@@ -34,18 +35,20 @@
 }
 .child {
   margin-top: -5px;
-  margin-left: 16px;
+  margin-left: 10px;
   height: 100px;
   width: 100%;
   margin-bottom: 10px;
 }
 .title {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "medium-content-sans-serif-font", sans-serif;
   color: rgba(0, 0, 0, 0.84);
+  opacity: 0.9;
 }
 .author-name {
-  font-size: 16px;
+  margin-top: 20px;
+  font-size: 15px;
   font-family: "medium-content-sans-serif-font", sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.84);

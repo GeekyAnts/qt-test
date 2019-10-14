@@ -1,3 +1,11 @@
 .publisher-logo {
   height: 40px;
 }
+.medium {
+  font-family: "medium-content-sans-serif-font", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}

@@ -7,6 +7,7 @@ import React from "react";
 
 function wrapEager(f) {
   return function WrapEager(props) {
+    console.log("props", props);
     if (props.index === 0) {
       return (
         <EagerLoadImages predicate={token => token === "above-fold"}>{React.createElement(f, props)}</EagerLoadImages>
